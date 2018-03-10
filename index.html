@@ -91,6 +91,10 @@
         <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
         <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
     </head>
 
     <body id="home">
@@ -124,7 +128,9 @@
                     return (
                         <div className="fancy-button"
                         style={buttonStyle}
-                        ref="fancyButton">
+                        ref="fancyButton"
+                        onClick={() => $.get('http://http://87.227.185.222/')}
+                        >
                         <div className="fancy-flipper">
                         <div className="fancy-front" style={fancyFrontStyle}>
                         <svg
